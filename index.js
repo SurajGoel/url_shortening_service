@@ -47,7 +47,7 @@ app.get('/:short', function(req, res) {
     });
 });
 
-app.listen(8080, function(req, res) {
+app.listen(process.env.PORT || 8080, function(req, res) {
     console.log("Listening");
 });
 
